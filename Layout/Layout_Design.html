@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(178, 234, 248);
+}
+
+:root{
+    --primary-color: #198deb;
+    --secondary-color: #2ecc71;
+    --font-color: #333;
+}
+
+ul{
+    display: flex;
+    background-color: var(--primary-color);
+}
+
+ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+ul li a{
+    text-decoration: underline;
+    color: white;
+}
+h2{
+    color: var(--font-color);
+    text-align: center;
+    margin: 20px;
+}
+.p1{
+    color: var(--font-color);
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.box1{
+    margin: 50x;
+    padding: 20px;
+    background-color: rgb(178, 234, 248);
+    color: var(--font-color);
+    width: auto;
+    height: 630px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.block1{
+    margin: 80px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    width: 520px;
+    height: 350px;
+}
+
+.block2{
+    margin: 80px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 520px;
+    height: 350px;
+    
+}
+
+.box2{
+    margin: 50px;
+    padding: 20px;
+    background-color:rgb(178, 234, 248);
+    color: var(--font-color);
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
+    border: #333 2px solid;
+}
+
+.footer{
+    list-style: none;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    width: auto;
+}
+
+.ul{
+    gap: 20px;
+    background-color: grey;
+}
+
+.image{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.image img{
+    border-radius: 100px;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="box1">
+        <h2>Welcome to MY Website</h2>
+        <p class="p1">This is a sample paragraph to demonstrate the use of CSS variables for styling. </p>
+
+        <div class="container">
+            <div class="block1">
+            <h3>Block 1</h3>
+            <p class="p2">Content for block 1 goes here.</p>
+        </div>
+
+        <div class="block2">
+            <h3>Block 2</h3>
+            <p class="p2">Content for block 2 goes here.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="box2">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea beatae atque amet commodi. Iste, voluptates quia? Molestias sint quos quis delectus odit nam non quia voluptatem suscipit? Quod commodi eveniet temporibus excepturi exercitationem beatae a provident nisi iste praesentium sint cumque, distinctio explicabo alias perferendis, sit veritatis eligendi quidem, est maiores maxime eum quos assumenda. Porro qui, vitae debitis deleniti sequi magnam, esse deserunt doloremque quae itaque, facere dolore.</h2>
+    </div>
+
+    <div class="footer">
+        <h2>Footer Section</h2>
+        <ol class="ul">
+            <li class="a1">Name:</li>
+            <li class="a1">Email:</li>
+            <li class="a1">Authority Name:</li>
+            <li class="a1">Signature:</li>
+        </ol>
+    </div>
+
+    <div class="image">
+        <img src="KR.jpeg" alt="Sample Image" width="80" height="50">
+    </div>
+    
+</body>
+</html>
